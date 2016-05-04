@@ -109,7 +109,7 @@ followed by a single colon (:), followed by the method name.
 
 .. code-block:: php
 
-    $app['posts.controller'] = function() use ($app) {
+    $app['posts.controller'] = function($app) {
         return new PostController($app['posts.repository']);
     };
 
